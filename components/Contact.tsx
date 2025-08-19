@@ -18,13 +18,13 @@ export default function Contact() {
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-6">
           <a
-            href="mailto:info@rdnotary.com"
+            href="mailto:rdnotaryandsigning@gmail.com"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
           >
             Email Us
           </a>
           <a
-            href="tel:+1234567890"
+            href="tel:313-474-1286"
             className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition"
           >
             Call Us
