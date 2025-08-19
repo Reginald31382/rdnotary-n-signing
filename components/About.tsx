@@ -13,7 +13,7 @@ const radleyFont = Radley({
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-100">
+    <section id="about" className="py-20 bg-gray-50">
       <motion.div
         className="container mx-auto px-4 md:flex md:items-center md:space-x-12"
         initial={{ opacity: 0, y: 50 }}
@@ -46,7 +46,8 @@ export default function About() {
         >
           <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
           <p className="text-xl mb-4">
-            At, <span className="font-bold">R|D Notary & Signing </span>
+            <span className="text-2xl">At, </span>
+            <span className="font-bold">R|D Notary & Signing </span>
             we provide reliable, professional, and timely notary services. Our
             goal is to make the notarization process simple and stress-free for
             individuals and businesses alike.

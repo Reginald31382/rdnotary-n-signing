@@ -10,7 +10,10 @@ const radleyFont = Radley({
 
 export default function Contact() {
   return (
-    <section id="contact" className={`py-20 bg-white ${radleyFont.className}`}>
+    <section
+      id="contact"
+      className={`py-20 bg-gradient-to-b from-white to-blue-100 ${radleyFont.className}`}
+    >
       <motion.div
         className="container mx-auto px-4 text-center"
         initial={{ opacity: 0, y: 100 }}

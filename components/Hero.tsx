@@ -1,15 +1,9 @@
 "use client";
 
-import { Sofia } from "next/font/google";
 import { Radley } from "next/font/google";
 import { motion } from "framer-motion";
 
 const radleyFont = Radley({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const sofiaFont = Sofia({
   subsets: ["latin"],
   weight: "400",
 });
@@ -20,7 +14,7 @@ export default function Hero() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <motion.h1
-          className={`text-5xl md:text-6xl font-bold mb-4 ${sofiaFont.className}`}
+          className={`text-6xl md:text-7xl font-bold mb-4 ${radleyFont.className}`}
           // className="text-4xl md:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,6 +45,9 @@ export default function Hero() {
         >
           Schedule a Signing
         </motion.a>
+        <p className="mb-4">
+          Licensed and Commissioned By the State of Michigan
+        </p>
       </div>
     </section>
   );

@@ -37,7 +37,8 @@ export default function Services() {
               <h3 className="text-2xl font-semibold mb-2">General Notary</h3>
               <p className="text-xl">
                 Certified notarizations for documents, affidavits, and
-                agreements.
+                agreements. Included but not limited to: Will, Trust, Power of
+                Attorney, and Deed of Trust.
               </p>
             </motion.div>
 
@@ -53,8 +54,25 @@ export default function Services() {
                 Mobile/Remote Notary
               </h3>
               <p className="text-xl">
-                We come to you or meet me online! Convenient on-location
-                notarizations for your schedule.
+                Commissioned in Washtenaw County and serving surrounding areas.
+                Offering convenient on-site or secure online notarizations
+                tailored to your schedule.
+              </p>
+            </motion.div>
+
+            {/* Bottom Card (spans both columns, centered) */}
+            <motion.div
+              className="p-6 bg-white/80 rounded-xl shadow hover:shadow-lg transition md:col-span-2 md:w-1/2 md:mx-auto"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <h3 className="text-2xl font-semibold mb-2">Printing</h3>
+              <p className="text-xl">
+                High-quality printing for business cards, flyers, brochures, and
+                more. We use premium materials and advanced equipment to deliver
+                professional results that showcase your brand.
               </p>
             </motion.div>
           </div>
