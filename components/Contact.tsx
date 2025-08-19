@@ -1,10 +1,16 @@
 "use client";
 
+import { Radley } from "next/font/google";
 import { motion } from "framer-motion";
+
+const radleyFont = Radley({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className={`py-20 bg-white ${radleyFont.className}`}>
       <motion.div
         className="container mx-auto px-4 text-center"
         initial={{ opacity: 0, y: 100 }}
@@ -12,8 +18,8 @@ export default function Contact() {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
-        <p className="mb-6">
+        <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
+        <p className="mb-6 text-xl">
           Schedule your appointment or ask questions about our services.
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-6">

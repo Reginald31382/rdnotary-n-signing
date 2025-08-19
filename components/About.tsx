@@ -1,9 +1,15 @@
 "use client";
 
+import { Radley } from "next/font/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import rdnotary from "@/public/rdnotary.png";
 import reggie1 from "@/public/reggie1.jpg";
+
+const radleyFont = Radley({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function About() {
   return (
@@ -35,15 +41,17 @@ export default function About() {
           </div>
         </div>
 
-        <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-          <p className="mb-4">
+        <div
+          className={`md:w-1/2 text-center md:text-left ${radleyFont.className}`}
+        >
+          <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
+          <p className="text-xl mb-4">
             At, <span className="font-bold">R|D Notary & Signing </span>
             we provide reliable, professional, and timely notary services. Our
             goal is to make the notarization process simple and stress-free for
             individuals and businesses alike.
           </p>
-          <p>
+          <p className="text-xl">
             Licensed and insured, we handle everything from legal documents to
             mobile signings with integrity and care.
           </p>

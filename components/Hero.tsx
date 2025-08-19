@@ -16,11 +16,11 @@ const sofiaFont = Sofia({
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-blue-100 to-white pt-24 md:pt-40 text-center">
+    <section className="bg-gradient-to-b from-blue-100 to-white mt-8 pt-24 md:pt-40 text-center">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <motion.h1
-          className={`text-4xl md:text-5xl font-bold mb-4 ${sofiaFont.className}`}
+          className={`text-5xl md:text-6xl font-bold mb-4 ${sofiaFont.className}`}
           // className="text-4xl md:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}

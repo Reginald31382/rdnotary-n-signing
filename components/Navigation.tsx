@@ -12,7 +12,7 @@ export default function Hamburger() {
   return (
     <>
       {/* NAVIGATION */}
-      <header className="bg-white shadow-md fixed w-full z-50">
+      <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div className="container mx-auto flex justify-between items-center p-4">
           <div className="w-15 md:w-20">
             <Image src={rdnotary} alt="R|D Notary & Signing" />

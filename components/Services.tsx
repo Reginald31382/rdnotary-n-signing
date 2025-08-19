@@ -12,22 +12,19 @@ const radleyFont = Radley({
 export default function Services() {
   return (
     <section id="services" className="relative py-20 overflow-hidden">
-      {/* Optimized Background Image */}
       <Image
-        src="/notary-jrome.jpg" // 👈 must be inside /public/
+        src="/notary-jrome.jpg"
         alt="Notary services background"
         fill
         priority
         className="object-cover object-center -z-10"
       />
 
-      {/* Overlay for readability */}
       <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
-      {/* Content */}
       <div className={`${radleyFont.className} relative z-10`}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-12 text-white">Our Services</h2>
+          <h2 className="text-4xl font-bold mb-12 text-white">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left Card */}
             <motion.div
