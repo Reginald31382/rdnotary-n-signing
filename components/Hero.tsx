@@ -1,14 +1,27 @@
 "use client";
 
+import { Sofia } from "next/font/google";
+import { Radley } from "next/font/google";
 import { motion } from "framer-motion";
+
+const radleyFont = Radley({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const sofiaFont = Sofia({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Hero() {
   return (
-    <section className="bg-gray-100 pt-24 md:pt-40 text-center">
+    <section className="bg-gradient-to-b from-blue-100 to-white pt-24 md:pt-40 text-center">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <motion.h1
-          className="text-4xl md:text-5xl font-bold mb-4"
+          className={`text-4xl md:text-5xl font-bold mb-4 ${sofiaFont.className}`}
+          // className="text-4xl md:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -18,7 +31,7 @@ export default function Hero() {
 
         {/* Subtext */}
         <motion.p
-          className="text-lg md:text-xl mb-6"
+          className={`text-lg md:text-xl mb-6 ${radleyFont.className}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
