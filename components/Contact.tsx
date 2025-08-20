@@ -45,7 +45,7 @@ export default function Contact() {
       </section>
 
       {/* Calendly Embed */}
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-white">
         <p className="text-center text-lg font-semibold mt-20 px-4">
           A 15-minute meeting where we can discuss your needs and answer general
           questions.
@@ -56,7 +56,7 @@ export default function Contact() {
           for legal matters.
         </span>
       </div>
-      <div className="container mx-auto px-4 my-10">
+      <div className="container mx-auto px-4 my-10 bg-white">
         <div
           className="calendly-inline-widget"
           data-url="https://calendly.com/dixonreggie313/30min"

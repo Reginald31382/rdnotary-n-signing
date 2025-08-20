@@ -25,7 +25,7 @@ export default function Hero() {
 
         {/* Subtext */}
         <motion.p
-          className={`text-lg md:text-xl mb-6 ${radleyFont.className}`}
+          className={`text-xl md:text-2xl mb-6 ${radleyFont.className}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
