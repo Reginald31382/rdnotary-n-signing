@@ -46,13 +46,14 @@ export default function Contact() {
 
       {/* Calendly Embed */}
       <div className="flex flex-col">
-        <p className="text-center font-semibold mt-20 px-4">
+        <p className="text-center text-lg font-semibold mt-20 px-4">
           A 15-minute meeting where we can discuss your needs and answer general
           questions.
         </p>
         <span className="text-center text-sm text-gray-500">
-          Disclaimer: We are not a law firm. We are not at liberty to give legal
-          advice.
+          Disclaimer: R|D Notary & Signing is not a law firm and is not
+          authorized to provide legal advice. Please consult a licensed attorney
+          for legal matters.
         </span>
       </div>
       <div className="container mx-auto px-4 my-10">
