@@ -46,19 +46,19 @@ export default function Contact() {
 
       {/* Calendly Embed */}
       <div className="flex flex-col">
-        <p className="text-center font-semibold mt-20">
+        <p className="text-center font-semibold mt-20 px-4">
           A 15-minute meeting where we can discuss your needs and answer general
           questions.
         </p>
-        <span className="text-center text-sm">
-          Disclaimer: We are not a law firm. We are not at liberty to answer
-          legal questions.
+        <span className="text-center text-sm text-gray-500">
+          Disclaimer: We are not a law firm. We are not at liberty to give legal
+          advice.
         </span>
       </div>
       <div className="container mx-auto px-4 my-10">
         <div
           className="calendly-inline-widget"
-          data-url="https://calendly.com/bigbusinessmason/15-minute-meeting"
+          data-url="https://calendly.com/dixonreggie313/30min"
           style={{ minWidth: "320px", height: "700px" }}
         />
       </div>

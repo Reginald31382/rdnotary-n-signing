@@ -14,7 +14,10 @@ export default function Hamburger() {
       {/* NAVIGATION */}
       <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div className="container mx-auto flex justify-between items-center p-4">
-          <div className="w-20 md:w-30">
+          <div
+            className="w-20 md:w-30 cursor-pointer"
+            onClick={() => window.location.reload()}
+          >
             <Image src={rdnotary} alt="R|D Notary & Signing" />
           </div>
           <nav className="hidden md:flex space-x-6">
