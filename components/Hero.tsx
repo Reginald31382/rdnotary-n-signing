@@ -46,7 +46,8 @@ export default function Hero() {
           Schedule a Signing
         </motion.a>
         <p className="mb-4">
-          Licensed and Commissioned By the State of Michigan
+          Licensed and Commissioned By the State of Michigan & National Notary
+          Association
         </p>
       </div>
     </section>
