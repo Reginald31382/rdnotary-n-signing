@@ -10,7 +10,7 @@ const radleyFont = Radley({
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-blue-100 to-white mt-8 pt-24 md:pt-40 text-center">
+    <section className="bg-gradient-to-b from-blue-100 to-white mt-8 pt-30 md:pt-40 text-center">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <motion.h1

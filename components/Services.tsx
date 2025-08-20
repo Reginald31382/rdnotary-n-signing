@@ -13,11 +13,12 @@ export default function Services() {
   return (
     <section id="services" className="relative py-20 overflow-hidden">
       <Image
-        src="/notary-jrome.jpg"
+        src="/notary-jrome1.jpg"
         alt="Notary services background"
         fill
         priority
         className="object-cover object-center -z-10"
+        loading="eager"
       />
 
       <div className="absolute inset-0 bg-black/40 -z-10"></div>
@@ -34,7 +35,9 @@ export default function Services() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h3 className="text-2xl font-semibold mb-2">General Notary</h3>
+              <h3 className="text-2xl font-semibold mb-2 underline">
+                General Notary
+              </h3>
               <p className="text-xl">
                 Certified notarizations for documents, affidavits, and
                 agreements. Included but not limited to: Will, Trust, Power of
@@ -50,13 +53,16 @@ export default function Services() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-2xl font-semibold mb-2 underline">
                 Mobile/Remote Notary
               </h3>
               <p className="text-xl">
-                Commissioned in Washtenaw County and serving surrounding areas.
-                Offering convenient on-site or secure online notarizations
-                tailored to your schedule.
+                Commissioned in{" "}
+                <span className="font-semibold text-orange-600">
+                  Washtenaw County
+                </span>{" "}
+                and serving surrounding areas. Offering convenient on-site or
+                secure online notarizations tailored to your schedule.
               </p>
             </motion.div>
 
@@ -68,7 +74,9 @@ export default function Services() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h3 className="text-2xl font-semibold mb-2">Printing</h3>
+              <h3 className="text-2xl font-semibold mb-2 underline">
+                Printing
+              </h3>
               <p className="text-xl">
                 High-quality printing for business cards, flyers, brochures, and
                 more. We use premium materials and advanced equipment to deliver
