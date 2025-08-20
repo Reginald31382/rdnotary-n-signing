@@ -50,7 +50,7 @@ export default function Contact() {
           A 15-minute meeting where we can discuss your needs and answer general
           questions.
         </p>
-        <span className="text-center text-sm text-gray-500">
+        <span className="text-center text-sm text-gray-500 px-4">
           Disclaimer: R|D Notary & Signing is not a law firm and is not
           authorized to provide legal advice. Please consult a licensed attorney
           for legal matters.
