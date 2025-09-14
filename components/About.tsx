@@ -44,8 +44,8 @@ export default function About() {
               fill
               className="rounded-2xl object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             />
-            <h3 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-black text-lg font-bold opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-black/40 px-3  rounded ">
-              Hello, I'm Reggie
+            <h3 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-black text-lg font-bold opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-black/40 px-3 rounded text-center">
+              Hello, nice to meet you, I'm Reggie!
             </h3>
           </div>
         </div>

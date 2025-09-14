@@ -17,29 +17,41 @@ export default function Contact() {
         className={`py-20 bg-gradient-to-b from-white to-blue-100 ${radleyFont.className}`}
       >
         <motion.div
-          className="container mx-auto px-4 text-center"
+          className="container mx-auto px-4"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
-          <p className="mb-6 text-xl">
-            Schedule your appointment or ask questions about our services.
-          </p>
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a
-              href="mailto:rdnotaryandsigning@gmail.com"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-            >
-              Email Us
-            </a>
-            <a
-              href="tel:313-474-1286"
-              className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition"
-            >
-              Call Us
-            </a>
+          {/* Text + Buttons */}
+          <div className="text-center max-w-lg mx-auto">
+            <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
+            <p className="mb-6 text-xl">
+              Schedule your appointment or ask questions about our services.
+            </p>
+            <div className="flex flex-col md:flex-row justify-center gap-6">
+              <a
+                href="mailto:rdnotaryandsigning@gmail.com"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              >
+                Email Us
+              </a>
+              <a
+                href="tel:313-474-1286"
+                className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition"
+              >
+                Call Us
+              </a>
+            </div>
+          </div>
+
+          {/* Cartoon Mascot - only mobile */}
+          <div className="flex justify-center md:hidden mt-8">
+            <img
+              src="/reggieMascot.png"
+              alt="Reggie Mascot"
+              className="w-40 h-auto"
+            />
           </div>
         </motion.div>
       </section>
@@ -63,7 +75,6 @@ export default function Contact() {
           style={{ minWidth: "320px", height: "700px" }}
         />
       </div>
-
       {/* Calendly Script */}
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"
