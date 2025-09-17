@@ -46,13 +46,13 @@ export default function Contact() {
           </div>
 
           {/* Cartoon Mascot - only mobile */}
-          <div className="flex justify-center md:hidden mt-8">
+          {/* <div className="flex justify-center md:hidden mt-8">
             <img
               src="/reggieMascot.png"
               alt="Reggie Mascot"
               className="w-40 h-auto"
             />
-          </div>
+          </div> */}
         </motion.div>
       </section>
 
