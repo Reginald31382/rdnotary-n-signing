@@ -31,7 +31,8 @@ export default function ScheduleForm() {
     const { name, value } = e.target;
 
     if (e.target instanceof HTMLInputElement && e.target.type === "checkbox") {
-      setFormData((prev) => ({ ...prev, [name]: e.target.checked }));
+      const target = e.target as HTMLInputElement; // ✅ assert HTMLInputElement
+      setFormData((prev) => ({ ...prev, [name]: target.checked }));
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
