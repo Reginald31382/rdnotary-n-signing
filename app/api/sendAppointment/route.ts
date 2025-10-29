@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
     // ✅ Send the email
     const emailResponse = await resend.emails.send({
-      from: "R|D Notary & Signing <www.rdnotarysigning.com>", // Use your verified domain
+      from: "R|D Notary & Signing <https://rdnotarysigning.com/>", // Use your verified domain
       to: "rdnotaryandsigning@gmail.com", // Your business email
       subject: `New Appointment Request from ${fullName}`,
       html: `
