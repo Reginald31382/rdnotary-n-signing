@@ -2,6 +2,7 @@
 
 import { Radley } from "next/font/google";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const radleyFont = Radley({
   subsets: ["latin"],
@@ -9,13 +10,14 @@ const radleyFont = Radley({
 });
 
 export default function Hero() {
+  const router = useRouter();
+
   return (
     <section className="bg-gradient-to-b from-blue-100 to-white mt-8 pt-30 md:pt-40 text-center">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <motion.h1
           className={`text-6xl md:text-7xl font-bold mb-4 ${radleyFont.className}`}
-          // className="text-4xl md:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -34,8 +36,8 @@ export default function Hero() {
         </motion.p>
 
         {/* CTA Button */}
-        <motion.a
-          href="#contact"
+        <motion.button
+          onClick={() => router.push("/schedule")}
           className="inline-block bg-blue-600 text-white px-6 py-3 mb-8 rounded-lg font-semibold hover:bg-blue-700 transition"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -44,7 +46,8 @@ export default function Hero() {
           whileTap={{ scale: 0.95 }}
         >
           Schedule a Signing
-        </motion.a>
+        </motion.button>
+
         <p className="mb-4">
           Licensed and Commissioned By the State of Michigan & National Notary
           Association

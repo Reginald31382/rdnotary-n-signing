@@ -109,17 +109,19 @@ export default function How({
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="min-w-0">
-                    <span className="inline-flex items-center text-sm font-semibold text-gray-700">
-                      <span className="rounded-full bg-sky-600 px-3 py-1.5 text-xs font-large text-white mr-2 text-center">
-                        {s.id}
+                    <div className="flex justify-center">
+                      <span className="inline-flex items-center text-sm font-semibold text-gray-700">
+                        <span className="rounded-full bg-sky-600 px-4 py-2 text-md font-large text-white mr-2 text-center">
+                          {s.id}
+                        </span>
+                        <h3
+                          id={`how-step-${s.id}-title`}
+                          className="text-base md:text-2xl font-semibold text-gray-900"
+                        >
+                          {s.title}
+                        </h3>
                       </span>
-                      <h3
-                        id={`how-step-${s.id}-title`}
-                        className="text-base md:text-lg font-semibold text-gray-900"
-                      >
-                        {s.title}
-                      </h3>
-                    </span>
+                    </div>
 
                     <p className="mt-3 text-lg text-gray-600 text-center">
                       {s.description}
