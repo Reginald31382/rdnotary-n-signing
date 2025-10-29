@@ -11,7 +11,10 @@ const radleyFont = Radley({
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-20 overflow-hidden">
+    <section
+      id="services"
+      className="relative py-20 overflow-hidden scroll-mt-32 md:py-20"
+    >
       <Image
         src="/notary-jrome1.jpg"
         alt="Notary services background"

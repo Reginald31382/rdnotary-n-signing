@@ -14,7 +14,7 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className={`py-20 bg-gradient-to-b from-white to-blue-100 ${radleyFont.className}`}
+        className={`scroll-mt-32 py-12 md:py-20 bg-gradient-to-b from-white to-blue-100 ${radleyFont.className}`}
       >
         <motion.div
           className="container mx-auto px-4"
@@ -46,26 +46,21 @@ export default function Contact() {
           </div>
 
           {/* Cartoon Mascot - only mobile */}
-          {/* <div className="flex justify-center md:hidden mt-8">
-            <img
-              src="/reggieMascot.png"
-              alt="Reggie Mascot"
-              className="w-40 h-auto"
-            />
-          </div> */}
         </motion.div>
       </section>
 
       {/* Calendly Embed */}
       <div className="flex flex-col bg-white">
-        <p className="text-center text-lg font-semibold mt-20 px-4">
+        <p className="text-center text-xl font-semibold mt-20 px-4">
           A 15-minute meeting where we can discuss your needs and answer general
           questions.
         </p>
-        <span className="text-center text-sm text-gray-500 px-4">
+        <span className="text-center text-sm text-gray-500 px-4 mt-4">
           Disclaimer: R|D Notary & Signing is not a law firm and is not
-          authorized to provide legal advice. Please consult a licensed attorney
-          for legal matters.
+          authorized to provide legal advice.
+        </span>
+        <span className="text-center text-sm text-gray-500 px-4">
+          Please consult a licensed attorney for all legal matters.
         </span>
       </div>
       <div className="container mx-auto px-4 my-10 bg-white">

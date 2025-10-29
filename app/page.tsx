@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Navigation from "@/components/Navigation";
+import How from "@/components/How";
 
 export default function Home() {
   // Scroll to top on page load/refresh
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
+      <How />
       <Contact />
       <Footer />
     </main>

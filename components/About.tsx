@@ -19,7 +19,10 @@ const lavishFont = Lavishly_Yours({
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section
+      id="about"
+      className="py-20 bg-gray-50 scroll-mt-32 py-12 md:py-20"
+    >
       <motion.div
         className="container mx-auto px-4 md:flex md:items-center md:space-x-12"
         initial={{ opacity: 0, y: 50 }}
