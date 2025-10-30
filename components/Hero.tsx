@@ -37,8 +37,8 @@ export default function Hero() {
 
         {/* CTA Button */}
         <motion.button
-          onClick={() => router.push("/schedule")}
-          className="inline-block bg-blue-600 text-white px-6 py-3 mb-8 rounded-lg font-semibold hover:bg-blue-700 transition"
+          // onClick={() => router.push("/schedule")}
+          className="inline-block bg-blue-600 text-white px-6 py-3 mb-8 rounded-lg font-semibold hover:bg-blue-700 transition cursor-pointer"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}

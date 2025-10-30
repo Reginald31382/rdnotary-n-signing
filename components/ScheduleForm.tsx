@@ -23,19 +23,12 @@ export default function ScheduleForm() {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    const { name, value } = e.target;
-
-    if (e.target instanceof HTMLInputElement && e.target.type === "checkbox") {
-      const target = e.target as HTMLInputElement; // ✅ assert HTMLInputElement
-      setFormData((prev) => ({ ...prev, [name]: target.checked }));
-    } else {
-      setFormData((prev) => ({ ...prev, [name]: value }));
-    }
+  const handleChange = (e: React.ChangeEvent<any>) => {
+    const { name, type, value, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
