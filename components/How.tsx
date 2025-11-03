@@ -1,7 +1,7 @@
 // How.tsx
 import React from "react";
 import { Radley } from "next/font/google";
-import { Calendar, FileText, MapPin, CheckCircle } from "lucide-react";
+import { Calendar, FileText, MapPin, CheckCircle, Stamp } from "lucide-react";
 
 const radleyFont = Radley({
   subsets: ["latin"],
@@ -81,7 +81,9 @@ export default function How({
             Getting your documents notarized is simple and hassle-free with my
             streamlined process.
           </p>
-
+          <div className="flex justify-center">
+            <Stamp className="mt-8 size-20 text-sky-600" aria-hidden />
+          </div>
           {/* <div className="mt-8 flex justify-center">
             <button
               onClick={handleBook}
@@ -122,10 +124,11 @@ export default function How({
                         </h3>
                       </span>
                     </div>
-
-                    <p className="mt-3 text-lg text-gray-600 text-center">
-                      {s.description}
-                    </p>
+                    <div className="">
+                      <p className="mt-3 text-lg text-gray-600 text-center p-2">
+                        {s.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -133,7 +136,7 @@ export default function How({
           })}
         </ol>
 
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <a
             href="#contact"
             onClick={(e) => {
@@ -146,7 +149,7 @@ export default function How({
           >
             Book Your Appointment
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

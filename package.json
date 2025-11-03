@@ -6,21 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev --dir app/emails"
   },
   "dependencies": {
+    "@react-email/components": "^0.5.7",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.548.0",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "resend": "^6.3.0"
+    "resend": "^6.4.0"
   },
   "devDependencies": {
+    "@react-email/preview-server": "^4.3.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "react-email": "4.3.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
