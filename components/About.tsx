@@ -19,10 +19,7 @@ const lavishFont = Lavishly_Yours({
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-20 bg-gray-50 scroll-mt-32 py-12 md:py-20"
-    >
+    <section id="about" className="bg-gray-50 scroll-mt-32 py-12 md:py-20">
       <motion.div
         className="container mx-auto px-4 md:flex md:items-center md:space-x-12"
         initial={{ opacity: 0, y: 50 }}
@@ -47,8 +44,8 @@ export default function About() {
               fill
               className="rounded-2xl object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             />
-            <h3 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-black text-lg font-bold opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-black/40 px-3 rounded text-center">
-              Hello, nice to meet you, I'm Reggie!
+            <h3 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-black text-lg font-bold opacity-0 transition-opacity duration-500 group-hover:opacity-100 px-3 rounded text-center ">
+              Hello, nice to meet you! My name is Reggie.
             </h3>
           </div>
         </div>

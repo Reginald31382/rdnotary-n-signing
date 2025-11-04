@@ -35,7 +35,7 @@ export default function Hero() {
           Professional Notary Services You Can Trust
         </motion.p>
 
-        {/* CTA Button */}
+        {/* CallToAction Button */}
         <motion.button
           onClick={() => router.push("https://rdnotary-form.netlify.app/")}
           className="inline-block bg-blue-600 text-white px-6 py-3 mb-8 rounded-lg font-semibold hover:bg-blue-700 transition cursor-pointer"

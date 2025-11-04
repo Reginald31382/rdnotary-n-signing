@@ -2,6 +2,7 @@
 
 import { Radley } from "next/font/google";
 import { motion } from "framer-motion";
+import { Phone } from "lucide-react";
 import Image from "next/image";
 
 const radleyFont = Radley({
@@ -24,7 +25,7 @@ export default function Services() {
         loading="eager"
       />
 
-      <div className="absolute inset-0 bg-black/40 -z-10"></div>
+      {/* <div className="absolute inset-0 bg-black/40 -z-10"></div> */}
 
       <div className={`${radleyFont.className} relative z-10`}>
         <div className="container mx-auto px-4 text-center">
@@ -44,7 +45,8 @@ export default function Services() {
               <p className="text-xl">
                 Certified notarizations for documents, affidavits, and
                 agreements. Included but not limited to: Will, Trust, Power of
-                Attorney, and Deed of Trust.
+                Attorney, and Deed of Trust, Consent Forms (travel, school,
+                medical treatment).
               </p>
             </motion.div>
 
@@ -67,6 +69,10 @@ export default function Services() {
                 and serving surrounding areas. Offering convenient on-site or
                 secure online notarizations tailored to your schedule.
               </p>
+              <div className="flex flex-row justify-center mt-2 gap-3">
+                <Phone className="size-8" />
+                <p className="text-xl">(313) 474-1286</p>
+              </div>
             </motion.div>
 
             {/* Bottom Card (spans both columns, centered) */}
