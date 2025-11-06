@@ -66,8 +66,12 @@ export default function Services() {
                 <span className="font-semibold text-orange-600">
                   Washtenaw County
                 </span>{" "}
-                and serving surrounding areas. Offering convenient on-site or
-                secure online notarizations tailored to your schedule.
+                and serving surrounding areas.{" "}
+                <span className="font-semibold text-orange-600">
+                  (Monroe, Wayne, Oakland, Jackson, Livingston)
+                </span>{" "}
+                Offering convenient on-site or secure online notarizations
+                tailored to your schedule.
               </p>
               <div className="flex flex-row justify-center mt-2 gap-3">
                 <Phone className="size-8" />
